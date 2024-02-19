@@ -38,6 +38,128 @@
       border: 1px solid white;
       display: none;
 }
+
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: calc(60vh - 45px);
+}
+.hero__section_logo{
+    width: 200px;
+    height: auto;
+}
+.hero__section_title{
+    text-align: center;
+    font: size 25px;
+    font-weight: 300;
+}
+.hero__section_input_container{
+    background-color: white;
+    width: 45%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+.input__container_location, .input__container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.input__container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+.input__container_search{
+    width: 65%;
+}
+.fa-solidfa-location-dot{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: 10px;
+    align-items: center;
+}
+.offer__container{
+    margin: 3rem auto;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5px;
+}
+.offer_card{
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    border:1px solid #e0e0e0 ;
+    transition:all 0.3s ease;
+    width:250px;
+}
+.offer_card img{
+    height: 220px;
+    width: 250px;
+    object-fit: cover;
+}
+.offer_content{
+    padding: 5px;
+}
+.offer_content h2{
+    font: 25px;
+    font-weight: 400;
+}
+.offer_content p{
+    font: 100;
+    font-weight: 200;
+}
+.offer_card:hover{
+    transform: scale(1.1);
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* screen size is from 1-600 px i.e. mobile screen */
 @media only screen and (max-width:600px){
     .navbar__menu__container  .user__icon{
@@ -48,5 +170,21 @@
     }
     .hero__section{
         min-height: 100vh;
+    }
+    .hero__section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        height: calc(80vh - 40px);
+        font-size: small;
+    }
+    .input__container_location,.input__container_search{
+       padding: 10px;
+       border-radius: 10px;
+       width: 95%; 
+    }
+    .hero__section_logo{
+        width: 100px;
+        height: auto;
     }
 }
