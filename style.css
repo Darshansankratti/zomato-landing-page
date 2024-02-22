@@ -209,7 +209,7 @@
     justify-content: center;
     align-items: center;
     padding: 3rem 6rem;
-    background-color:rgb(222, 201, 187);
+    background-color: rgb(255,251,247);
     width: 100%;
 }
 .get_the_app .semi_container{
@@ -334,6 +334,10 @@ div input{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer_section1_button button img{
+    width: 15px;
+    padding: 1px;
 }
 .footer_section2{
     display: grid;
