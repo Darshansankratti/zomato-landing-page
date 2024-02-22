@@ -89,7 +89,7 @@
     margin: 3rem auto;
     /* width: 80%; */
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     /* align-items: center; */
     justify-content: center;
     gap: 5px;
@@ -122,17 +122,269 @@
     transform: scale(1.1);
     margin: 10px;
 }
+.collections{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.collections h1{
+    font-weight: 600;
+    position: absolute;
+    left: 63px;
+    top: -31px;
+}
+.collections .sub_heading_container{
+    width: 86%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.sub_heading_container span:nth-child(2){
+    color:#ff7e8b;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.collections_card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+.collections_card_container .card{
+    height: 250px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+.card1{
+    background-image: url(./images/collection1.jpg);
 
+}
+.card2{
+    background-image: url(./images/collection2.jpg);
+    
+}
+.card3{
+    background-image: url(./images/collection3.jpg);
+    
+}
+.card4{
+    background-image: url(./images/collection4.jpg);
+    
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 10px;
 
+}
+.collections_card_container .card .content{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    color: white;
+    padding: 12px 12px;
+    
+}
+.content h2{
+    font-weight: 400;
 
+}
+.get_the_app{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 6rem;
+    background-color:rgb(222, 201, 187);
+    width: 100%;
+}
+.get_the_app .semi_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+}
+.get_the_app .semi_container .left{
+    flex: 2;
+    object-fit: cover;
+    object-position: center;
+}
+.get_the_app .semi_container .right{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.get_the_app .semi_container .left  img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.get_the_app .semi_container .right  img{
+    width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.right p{
+    font: 0.8rem;
+}
+.right .radio_button_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.right .radio_button_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right .radio_button_container
+div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+.right .input_container{
+    display: flex;
+    gap:0.5rem;
 
+}
+.input_container button, .input_container input{
+    padding: 10px 12px;
 
-
-
-
-
-
-
+}
+.input_container input{
+    flex:auto;
+    border:1px solid white;
+}
+.input_container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input_container{
+    flex-wrap: wrap;
+}
+.right .download_app_container{
+    display: flex;
+    flex-direction:column ;
+    gap:0.7rem;
+}
+.right .download_app_container h5{
+    font-weight: 400;
+    color: gray;
+    outline: none;
+}
+.right .download_app_container div{
+    display: flex;
+    gap:1rem;
+}
+.right .download_app_container div img{
+    width: 50px;
+}
+.footer{
+    width: 100%;
+    background-color: aliceblue;
+}
+.footer_section1{
+    padding: 30px;
+    margin-left:80px;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.footer_section1 img{
+    width: 150px;
+}
+.footer_section1_button{
+    gap: 1rem;
+    display: flex;
+}
+.footer_section1_button button{
+    border: 1px solid gray;
+    padding: 5px;
+    width: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_section2{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    width: 80%;
+    margin-left: 95px;
+}
+.footer_section2_column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.footer_section2_column h5{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+}
+.link{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+    font-weight: 300;
+}
+.link:hover{
+    color: black;
+}
+.footer_social_links{ 
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.footer_section2_column1 .footer_social_links button {
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+.disclaimer{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px;
+    border-top: 1px solid gray;
+    
+}
 
 
 
@@ -186,5 +438,38 @@
     .hero__section_logo{
         width: 100px;
         height: auto;
+    }
+}
+@media only screen and (max-width:1300px){
+    .get_the_app .semi_container .left,
+    .get_the_app .semi_container .right{
+        flex:1;
+    }
+    .get_the_app .semi_container{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:900px){
+    .get_the_app{
+        padding: 2rem 0;
+    }
+    .get .semi_container{
+        width: 95%;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:1000px){
+     .footer_section2{
+        grid-template-columns:repeat(3,1fr) ;
+     }
+}
+@media only screen and (max-width:600px){
+    .footer_section2{
+       grid-template-columns:repeat(2,1fr) ;
+    }
+}
+@media only screen and (max-width:300px){
+    .footer_section2{
+       grid-template-columns:repeat(1,1fr) ;
     }
 }
